@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Work+Sans:wght@400;600&display=swap');
+
+/*
+Farbe: #2e2e2e / #fff / #000 / #1d2c2f
+font-family: 'Lora', serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+}
+* {margin:0; padding:0}
+/* ------ Global ------ */
+h1 {
+    font-family: 'Lora', serif;
+}
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.2em;
+    line-height: 1.6em;
+    text-align: center;
+}
+p {
+    font-size: 1em;
+    line-height: 2em;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+/* ------ HeaderStartseite ------ */
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+header article {
+    width: 45%;
+}
+
+header article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+header h1 {
+    font-size: 5.4em;
+    line-height: 1em;
+    color: #000;
+    text-align: center;
+}
+header h2 {
+    font-size: 1.4em;
+    line-height: 1.3em;
+    color: #000;
+    margin-bottom: 10vh;
+}
+.imgStart {
+    background: url(../img/design-interior-1.jpg) center/cover no-repeat;
+    width: 55%;
+    height: 100vh;
+}
+/* ------ STICKY Navigation ------*/
+nav {
+    width: 100%;
+    background: #2e2e2e;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+nav img {
+    padding: 2vh 0 2vh 2%;
+}
+
+.nav-line{
+    font-size: 1.4rem;
+    position: relative;
+    top: 1px;
+}
+nav a>span:nth-of-type(1){
+    left: -4px;
+    color: #2e2e2e;
+}
+nav a>span:nth-of-type(2){
+    left: 4px;
+    color: #2e2e2e;
+}
+nav a:hover>span:nth-of-type(1){
+    left: -4px;
+    color: #fff;
+}
+nav a:hover>span:nth-of-type(2){
+    left: 4px;
+    color: #fff;
+}
+nav ul {
+    display: flex;
+}
+nav li {
+    list-style: none;
+    justify-content: space-around;
+    padding: 0 4vw;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: white;
+    border-bottom: ;
+}
+/* ------ our Story ------*/
+#story {
+    background: #2e2e2e;
+    padding: 18vh 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#story div {
+    background: url(../img/story.jpg) center/cover no-repeat;
+    width: 100%;
+    height: 70vh;
+}
+#story article h2 {
+    color: #fff;
+    padding-bottom: 2vh;
+}
+#story article p {
+    color: #fff;
+    padding: 0 8% 3vh;
+}
+#story article {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+/* ------ Featured ------*/
+#featured {
+    background: #fff;
+}
+#featured h2 {
+    padding: 26vh 30% 0;
+}
+#featured p {
+    padding: 2vh 24% 8vh;
+}
+#featured article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 70px;
+    row-gap: 8px;
+    padding: 0 4%;
+}
+#featured article div:nth-of-type(1) {
+background: url(../img/features1.jpg) center/cover no-repeat;
+height: 26vh;
+}
+#featured article div:nth-of-type(2) {
+    background: url(../img/features2.jpg) center/cover no-repeat;
+}
+#featured article div:nth-of-type(3) {
+    background: url(../img/features3.jpg) center/cover no-repeat;
+}
+#featured article p {
+    padding: 0;
+    line-height: 1em;
+    text-align: center;
+    opacity: 0.5;
+}
+#yt {
+    display: flex;
+    justify-content: space-around;
+}
+iframe {
+    width: 560px;
+    height: 315px;
+    padding: 8vh 0 14vh;
+}
+#contact {
+    background: #2e2e2e;
+    padding: 16vh 0;
+}
+#contact h2, #contact p {
+    color: #fff;
+    text-align: left;
+}
+/* ------ Contact Area ------ */
+#contact article p {
+    text-align: justify;
+    padding-top: 1.5em;
+}
+#contact {
+    display: flex;
+    justify-content: space-around;
+}
+#contact article {
+    width: 35%;
+}
+#contact article form {
+    width: 80%;
+}
+#contact form input, #contact form textarea {
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    height: 3vh;
+    padding: 0 2%;
+    margin-bottom: 3vh;
+}
+#contact form textarea {
+    resize:vertical;
+    overflow:auto;
+    padding-top: 1vh;
+}
+#contact form label {
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    line-height: 2em;
+    color: #fff;
+}
+#contact form input.submit {
+    width: 20%;
+    height: 4vh;
+    margin-top: 2vh;
+    font-weight: 600;
+}
+footer {
+    font-family: 'Lora', serif;
+    background: #1d2c2f;
+    color: #fff;
+    display: flex;
+    padding: 5vh 2%;
+    justify-content: space-between;
+}
+footer ul {
+    display: flex;
+}
+footer li {
+    padding-left: 30px;
+    color: #fff;
+    list-style: none;
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+footer a:hover {
+    opacity: 0.4;
+}
+
+
+/*
+
+/*Large Desktop*
+@media (min-width:1200px) {
+    
+}
+/*Normal Desktop*
+@media (min-width:1024px) and (max-width:1199px) {
+    
+}
+/*small desktop*
+@media (min-width:980px) and (max-width:1023px) {
+    
+}
+/*For tablet *
+@media (min-width:768px) and (max-width:979px)  {
+    
+}
+/*For Mobile landscape *
+@media (min-width:480px) and (max-width:767px)  {
+    
+}
+/*For Mobile  *
+@media (min-width:320px) and (max-width:479px)  {
+}
